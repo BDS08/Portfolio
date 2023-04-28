@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="testimonial.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="navLeft">Portfolio<img src="../img/thumbsup.svg" alt=""> </div>
+        <div class="navRight" id="bar">
+            <div class="navHam" id="imgBar">
+                <img src="../img/bar.svg" alt="">
+            </div>
+            <div class="navHam navToggle" id="cross">
+                <img src="../img/cs.svg" alt="">
+            </div>
+        </div>
+        <div class="navLink navToggle" id="link">
+            <a href="../index.html">
+                <i class="fa-solid fa-house"></i>Home
+            </a>
+            <a href="../work/work.html">
+                <i class="fa-solid fa-briefcase"></i>Works
+            </a>
+            <a href="../testimonial/testimonial.html">
+                <i class="fa-solid fa-message"></i>Testimonials
+            </a>
+            <a href="../contact/contact.html">
+                <i class="fa-solid fa-envelope"></i>Contact Us
+            </a>
+        </div>
+    </nav>
+
+    <div class="main">
+
+        <div class="testHead">
+            <div class="testHeading">Testimonial</div>
+            <div class="testSubHeading"><span>Real feedback</span> from <span>real clients</span> - see how I've made an
+                impact</div>
+        </div>
+
+        <div class="swiper testCard">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testRCard">
+                        <div class="testText">
+                            <div class="trcHeading">Strong Understanding of UI/UX Design</div>
+                            <div class="trcPara">During his tenure with us, he has shown a strong understanding of UI
+                                design principles and has consistently delivered high-quality work. He has been a
+                                valuable team player, demonstrating a positive attitude, willingness to learn, and
+                                excellent person to work with. I am confident that he will excel in any design-related
+                                role in the future
+                            </div>
+                        </div>
+                        <div class="testClient">
+                            <img src="../img/rt3.jpeg" alt="">
+                            <div class="clientAbout">
+                                <div class="clientName">Hemant</div>
+                                <div class="clientCom">NextHire</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testRCard">
+                        <div class="testText">
+                            <div class="trcHeading">He is Bright, Articulate and Hardworking</div>
+                            <div class="trcPara">we found Badal Singh to be enthusiastic and reliable in
+                                completing his assigned work. He is a bright, articulate, and hardworking
+                                individual who has good communication skills and is compatible with his
+                                colleagues and supervisors.
+                                If you need more information, Please do not hesitate to get in touch. We wish
+                                him every success in his future endeavours.
+                            </div>
+                        </div>
+                        <div class="testClient">
+                            <img src="../img/rt2.jpeg" alt="">
+                            <div class="clientAbout">
+                                <div class="clientName">Mukesh Sharma</div>
+                                <div class="clientCom">GSF</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testRCard">
+                        <div class="testText">
+                            <div class="trcHeading">He is passionate and Dedicated</div>
+                            <div class="trcPara">Badal Kumar Singh has a good knowledge of UI UX Designing and has a
+                                fast
+                                learner ability which makes him different in all career horizons.
+                                , He was passionate and dedicated about his work and tasks, he completed almost every
+                                task
+                                within the time frame being one of the responsible people. He was one of the most
+                                mentally active people while having brainstorming sessions and team meetings with him
+                            </div>
+                        </div>
+                        <div class="testClient">
+                            <img src="../img/rt1.jpeg" alt="">
+                            <div class="clientAbout">
+                                <div class="clientName">Harshak Sinha</div>
+                                <div class="clientCom">CEO, Digitea</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiperBtn"></div>
+            <div class="swiper-button-prev swiperBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footLeft">
+            Designed by Badal kumar Singh
+        </div>
+        <div class="footRight">
+            <a href="https://www.behance.net/badalkumarsingh"><i class="fa-brands fa-square-behance"></i></a>
+            <a href="https://www.linkedin.com/in/badal-singh-73553622a/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/bds_0504/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".testCard", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        let bar = document.getElementById("bar")
+        let link = document.getElementById("link")
+        let imgBar = document.getElementById("imgBar")
+        let cross = document.getElementById("cross")
+
+        bar.addEventListener('click', () => {
+            link.classList.toggle('navToggle')
+            imgBar.classList.toggle('navToggle')
+            cross.classList.toggle('navToggle')
+        })
+    </script>
+</body>
+
+</html>

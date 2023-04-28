@@ -1,0 +1,254 @@
+@font-face {
+    font-family: rMedium;
+    src: url(../fonts/rubik.medium.ttf);
+}
+
+@font-face {
+    font-family: ggMedium;
+    src: url(../fonts/GalanoGrotesqueMedium.otf);
+}
+
+@font-face {
+    font-family: ggBold;
+    src: url(../fonts/GalanoGrotesqueBold.otf);
+}
+
+.main {
+    padding-top: 143px;
+    background: linear-gradient(102.89deg, #151515 0%, #0C0900 46.6%, #151515 100.99%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.workHead {
+    margin-bottom: 80px;
+}
+
+.workHeading {
+    font-family: rMedium;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: 0.09em;
+    text-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+}
+
+.workHeading span {
+    font-family: rMedium;
+    font-weight: 700;
+    background: linear-gradient(270deg, #D2FFA5 0%, #B0FFDE 14.25%, #B3E8FF 34.57%, #D3B1FF 55.92%, #FFB6D5 83.53%, #FFB5B5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.workSubheading {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    text-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+}
+
+.workSample {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wrapText {
+    margin: 25px 0;
+}
+
+.wtHead {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: galeno;
+    color: #B3B3B3;
+}
+
+.wtYear {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: ggMedium;
+    color: #F3F3FF;
+}
+
+.sampleWrap {
+    margin: 30px 10px;
+}
+
+.sample {
+    width: 580px;
+    height: 443px;
+    background:
+        linear-gradient(102.89deg, #151515 0%, #0C0900 46.6%, #151515 100.99%) padding-box,
+        linear-gradient(118.33deg, #949494 -16.56%, rgba(148, 148, 148, 0) 55.57%, #949494 118.42%) border-box;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.sample:hover {
+    background: rgba(35, 35, 35, 0.8);
+}
+
+.sampleHead {
+    display: flex;
+    text-align: left;
+    padding: 0 120px;
+    gap: 4px;
+}
+
+.shHeading {
+    font-family: ggBold;
+    font-size: 33.8635px;
+    line-height: 46px;
+    padding: 10px 0;
+}
+
+.sampleExtra {
+    font-family: ggBold;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+    padding: 10px 0;
+}
+
+footer {
+    height: 79px;
+    display: flex;
+    align-items: center;
+    background: #000000;
+    padding: 0px 100px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.topArrow{
+    position: absolute;
+    top: -100px;
+    right: 40px;
+}
+
+.footLeft {
+    font-family: galeno;
+    font-size: 14.0002px;
+    line-height: 19px;
+}
+
+.footRight {
+    display: flex;
+    gap: 25px;
+    font-size: 25px;
+}
+
+@media (max-width: 700px) {
+    .main {
+        padding-top: 87px;
+    }
+
+    .workHead {
+        margin-bottom: 50px;
+    }
+
+    .workHeading {
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: 0.07em;
+        margin-bottom: 15px;
+    }
+
+    .workSubheading {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+    }
+
+    .workSample {
+        padding: 0 25px;
+    }
+
+    .wrapText {
+        margin: 15px 0;
+    }
+
+    .wtHead {
+        font-size: 12.201px;
+        line-height: 16px;
+    }
+
+    .wtYear {
+        font-size: 12.201px;
+        line-height: 16px;
+    }
+
+    .sampleWrap {
+        margin: 10px 5px;
+    }
+
+    .sample {
+        width: 310.11px;
+        height: 225.21px;
+    }
+
+    .sampleHead {
+        padding: 0 45px;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .sampleHead img{
+        width: 70px;
+    }
+
+    .shHeading {
+        font-size: 17.2154px;
+        line-height: 23px;
+        padding: 5px 0;
+    }
+
+    .sampleExtra {
+        font-size: 17.2154px;
+        line-height: 23px;
+        padding: 5px 0;
+    }
+
+    .topArrow{
+        position: absolute;
+        top: -50px;
+        right: 10px;
+    }
+
+    .topArrow img{
+        width: 40px;
+    }
+
+    footer {
+        height: 51px;
+        padding: 0px 25px;
+    }
+
+    .footLeft {
+        font-size: 12px;
+    }
+
+    .footRight {
+        gap: 10px;
+        font-size: 17px;
+    }
+
+}

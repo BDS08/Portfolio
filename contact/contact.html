@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="navLeft">Portfolio<img src="../img/thumbsup.svg" alt=""> </div>
+        <div class="navRight" id="bar">
+            <div class="navHam" id="imgBar">
+                <img src="../img/bar.svg" alt="">
+            </div>
+            <div class="navHam navToggle" id="cross">
+                <img src="../img/cs.svg" alt="">
+            </div>
+        </div>
+        <div class="navLink navToggle" id="link">
+            <a href="../index.html">
+                <i class="fa-solid fa-house"></i>Home
+            </a>
+            <a href="../work/work.html">
+                <i class="fa-solid fa-briefcase"></i>Works
+            </a>
+            <a href="..testimonial/testimonial.html">
+                <i class="fa-solid fa-message"></i>Testimonials
+            </a>
+            <a href="../contact/contact.html">
+                <i class="fa-solid fa-envelope"></i>Contact Us
+            </a>
+        </div>
+    </nav>
+    
+    <div class="main">
+        <div class="contact">
+            <div class="contactLeft">
+                <img src="../img/hero.svg" alt="" class="contactImg">
+                <div class="contactText">
+                    <div class="contactHeading">Hey there!</div>
+                    <div class="contactSubHeading">"Get in touch today, let's create something amazing together"</div>
+                </div>
+            </div>
+            <div class="contactRight">
+                <div class="formHead">Get in <span>touch</span> today !!</div>
+                <form action="#">
+                    <input type="email" placeholder="Email Id">
+                    <textarea placeholder="Message.."></textarea>
+
+                    <button type="submit">Send &nbsp;<i class="fa-solid fa-paper-plane"> </i> </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footLeft">
+            Designed by Badal kumar Singh
+        </div>
+        <div class="footRight">
+            <a href="https://www.behance.net/badalkumarsingh"><i class="fa-brands fa-square-behance"></i></a>
+            <a href="https://www.linkedin.com/in/badal-singh-73553622a/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/bds_0504/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+
+    <script>
+        let bar = document.getElementById("bar")
+        let link = document.getElementById("link")
+        let imgBar = document.getElementById("imgBar")
+        let cross = document.getElementById("cross")
+
+        bar.addEventListener('click', () => {
+            link.classList.toggle('navToggle')
+            imgBar.classList.toggle('navToggle')
+            cross.classList.toggle('navToggle')
+        })
+    </script>
+</body>
+</html>

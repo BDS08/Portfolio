@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="navLeft">Portfolio<img src="./img/thumbsup.svg" alt=""> </div>
+        <div class="navRight" id="bar">
+            <div class="navHam" id="imgBar">
+                <img src="./img/bar.svg" alt="">
+            </div>
+            <div class="navHam navToggle" id="cross">
+                <img src="./img/cs.svg" alt="">
+            </div>
+        </div>
+        <div class="navLink navToggle" id="link">
+            <a href="#">
+                <i class="fa-solid fa-house"></i>Home
+            </a>
+            <a href="./work/work.html">
+                <i class="fa-solid fa-briefcase"></i>Works
+            </a>
+            <a href="./testimonial/testimonial.html">
+                <i class="fa-solid fa-message"></i>Testimonials
+            </a>
+            <a href="./contact/contact.html">
+                <i class="fa-solid fa-envelope"></i>Contact Us
+            </a>
+        </div>
+    </nav>
+    <div class="hero">
+        <!-- <div class="heroCircle"></div> -->
+        <img src="./img/hero.svg" alt="" class="heroImg">
+        <div class="heroHead">
+            <div class="heroHeading">Badal <span>Singh</span></div>
+            <div class="heroSubheading">I let my design <span>speak</span> for me</div>
+        </div>
+        <div class="heroText">
+            <div class="top">
+                I’m from India, currently learning UX/UI Designing. I know how to convert a user into a subscriber. I keep design clean, appealing and follow the latest trends keeping in mind user needs.
+            </div><br>
+            <div class="mid">
+                I have worked with a range of clients, from startups to deliver user-centered digital products that meet their specific needs and goals. I am an excellent communicator and team player, with the ability to collaborate effectively with cross-functional teams, including developers, designers, product managers, and stakeholders.
+            </div><br>
+            <div class="bot">
+                Would love to connect! :)
+            </div>
+        </div>
+        <div class="heroLink">
+            <a href="https://drive.google.com/file/d/1Of2ERSP0Czr5gJIaHK36WYfITOJNWAGS/view?usp=sharing">
+                <div class="linkBtn">Resume</div>
+            </a>
+            <a href="./work/work.html">
+                <div class="linkBtn">Works</div>
+            </a>
+        </div>
+
+        <div class="socialLink">
+            <a href="https://www.behance.net/badalkumarsingh"><i class="fa-brands fa-square-behance"></i></a>
+            <a href="https://www.linkedin.com/in/badal-singh-73553622a/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/bds_0504/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+
+    <script>
+        let bar = document.getElementById("bar")
+        let link = document.getElementById("link")
+        let imgBar = document.getElementById("imgBar")
+        let cross = document.getElementById("cross")
+
+        bar.addEventListener('click', () => {
+            link.classList.toggle('navToggle')
+            imgBar.classList.toggle('navToggle')
+            cross.classList.toggle('navToggle')
+        })
+    </script>
+</body>
+</html>

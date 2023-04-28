@@ -1,0 +1,265 @@
+@font-face {
+    font-family: rMedium;
+    src: url(../fonts/rubik.medium.ttf);
+}
+
+@font-face {
+    font-family: ggMedium;
+    src: url(../fonts/GalanoGrotesqueMedium.otf);
+}
+
+@font-face {
+    font-family: ggBold;
+    src: url(../fonts/GalanoGrotesqueBold.otf);
+}
+
+.main {
+    padding: 0 100px;
+    padding-top: 110px;
+    background: linear-gradient(102.89deg, #151515 0%, #0C0900 46.6%, #151515 100.99%);
+    min-height: calc(100vh - 51px);
+}
+
+.testHeading {
+    font-family: ggMedium;
+    font-size: 21px;
+    line-height: 160%;
+    letter-spacing: 0.12em;
+}
+
+.testSubHeading {
+    font-size: 42px;
+    line-height: 50px;
+    font-family: rMedium;
+}
+
+.testSubHeading span {
+    font-family: rMedium;
+    background: linear-gradient(270deg, #D2FFA5 0%, #B0FFDE 14.25%, #B3E8FF 34.57%, #D3B1FF 55.92%, #FFB6D5 83.53%, #FFB5B5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.swiper{
+    padding: 40px 0;
+}
+
+.swiperBtn::after,
+.swiperBtn::before {
+    font-size: 20px;
+    color: #fff;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #fff !important;
+}
+
+.testRCard {
+    background:
+        linear-gradient(102.89deg, #151515 0%, #0C0900 46.6%, #151515 100.99%) padding-box,
+        linear-gradient(118.33deg, #949494 -16.56%, rgba(148, 148, 148, 0) 55.57%, #949494 118.42%) border-box;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 40px 35px;
+    position: relative;
+    width: 90%;
+}
+
+.trcHeading {
+    font-size: 28px;
+    line-height: 38px;
+    font-family: ggMedium;
+    text-align: center;
+}
+
+.trcPara {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    font-family: galeno;
+    margin: 25px 0;
+}
+
+.testClient {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.testClient img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.clientName {
+    font-family: ggBold;
+}
+
+.clientCom {
+    font-family: galeno;
+}
+
+.swiper-wrapper {
+    margin: 40px 0;
+}
+
+/* .trcTri {
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    bottom: -50px;
+    left: 50%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: translateX(-50%) rotate(180deg);
+    background: linear-gradient(102.89deg, #151515 0%, #0C0900 46.6%, #151515 100.99%);
+    z-index: 2;
+}
+
+.trcTriB {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    bottom: -51px;
+    left: 50%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: translateX(-50%) rotate(180deg);
+    background: linear-gradient(118.33deg, #949494 -16.56%, rgba(148, 148, 148, 0) 55.57%, #949494 118.42%);
+    z-index: 1;
+}
+
+.testOverflow {
+    position: relative;
+}
+
+.testThumbnail {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px auto;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.testThumbnail img {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.testCard,
+.testThumbs{
+    width: 100%;
+}
+
+.testSlider .swiper-wrapper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+} */
+
+footer {
+    height: 79px;
+    display: flex;
+    align-items: center;
+    background: #000000;
+    padding: 0px 100px;
+    justify-content: space-between;
+}
+
+.footLeft {
+    font-family: galeno;
+    font-size: 14.0002px;
+    line-height: 19px;
+}
+
+.footRight {
+    display: flex;
+    gap: 25px;
+    font-size: 25px;
+}
+
+@media (max-width: 700px) {
+    .main {
+        padding: 0 25px;
+        padding-top: 86px;
+    }
+
+    .testHeading {
+        font-size: 14px;
+    }
+
+    .testSubHeading {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .swiperBtn {
+        display: none;
+    }
+
+    .swiperBtn::after,
+    .swiperBtn::before {
+        display: none;
+    }
+
+    .swiper-slide {
+        padding-left: 0%;
+    }
+
+    .testRCard {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .trcHeading {
+        font-size: 18px;
+        text-align: left;
+        line-height: 24px;
+    }
+
+    .trcPara {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: left;
+    }
+
+    .testClient {
+        gap: 10px;
+    }
+
+    .testClient img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .swiper-wrapper {
+        margin: 30px 0;
+    }
+
+    footer {
+        height: 51px;
+        padding: 0px 25px;
+    }
+
+    .footLeft {
+        font-size: 12px;
+    }
+
+    .footRight {
+        gap: 10px;
+        font-size: 17px;
+    }
+
+}

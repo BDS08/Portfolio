@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian&family=Rubik&display=swap');
+
+@font-face {
+    font-family: pBold;
+    src: url(./fonts/poppins.bold.ttf);
+}
+
+@font-face {
+    font-family: pSemibold;
+    src: url(./fonts/poppins.semibold.ttf);
+}
+
+@font-face {
+    font-family: pMedium;
+    src: url(./fonts/poppins.medium.ttf);
+}
+
+@font-face {
+    font-family: pRegular;
+    src: url(./fonts/poppins.regular.ttf);
+}
+
+@font-face {
+    font-family: galeno;
+    src: url(./fonts/GalanoGrotesqueLight.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: pRegular;
+    color: #fff;
+}
+
+:root {}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar starts*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 89px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(102.89deg, rgba(21, 21, 21, 0.5) 0%, rgba(12, 9, 0, 0.5) 46.6%, rgba(21, 21, 21, 0.5) 100.99%);
+    backdrop-filter: blur(11px);
+    font-size: 1.72rem;
+    z-index: 10;
+}
+
+.navLeft {
+    font-family: 'Miltonian', cursive;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.07em;
+    background: linear-gradient(270deg, #D2FFA5 0%, #B0FFDE 14.25%, #B3E8FF 34.57%, #D3B1FF 55.92%, #FFB6D5 83.53%, #FFB5B5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navRight {
+    position: relative;
+    cursor: pointer;
+}
+
+.navLink {
+    position: absolute;
+    top: 89px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(102.89deg, #151515 0%, #0C0900 46.6%, #151515 100.99%);
+    padding: 2rem 100px;
+    z-index: 10;
+}
+
+.navLink a {
+    padding: .84446rem 0;
+    display: block;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    font-family: galeno;
+}
+
+.navLink a i {
+    margin-right: 1rem;
+}
+
+.navToggle {
+    display: none;
+}
+
+.navHam {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Navbar Ends*/
+
+.hero {
+    position: relative;
+    padding-top: 143px;
+    padding-bottom: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(102.89deg, #151515 0%, #0C0900 46.6%, #151515 100.99%);
+}
+
+/* .heroCircle {
+    width: 181px;
+    height: 181px;
+    border: 4px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(102.89deg, #151515 0%, #0C0900 46.6%, #151515 100.99%), linear-gradient(270deg, #D2FFA5 0%, #B0FFDE 14.25%, #B3E8FF 34.57%, #D3B1FF 55.92%, #FFB6D5 83.53%, #FFB5B5 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+} */
+
+.heroHeading {
+    font-family: pBold;
+    font-size: 64px;
+    line-height: 96px;
+    letter-spacing: 0.07em;
+    text-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+}
+
+.heroHeading span {
+    background: linear-gradient(270deg, #D2FFA5 0%, #B0FFDE 14.25%, #B3E8FF 34.57%, #D3B1FF 55.92%, #FFB6D5 83.53%, #FFB5B5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: pBold;
+    text-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+}
+
+.heroSubheading {
+    font-size: 29px;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    font-family: pSemibold;
+    text-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+}
+
+.heroSubheading span {
+    color: #B1FFDD;
+    font-family: pSemibold;
+}
+
+.heroText {
+    margin: 45px 0;
+    padding: 0 16.18%;
+}
+
+.heroText .top {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    font-family: 'Rubik', sans-serif;
+}
+
+.heroText .mid {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+}
+
+.heroText .bot {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+}
+
+.heroLink {
+    display: flex;
+    gap: 100px;
+}
+
+.linkBtn {
+    width: 165.3px;
+    height: 48.17px;
+    border: 0.944568px solid #FFFFFF;
+    border-radius: 4.72284px;
+    font-size: 17.0022px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    text-shadow: 0px 3.77827px 37.7827px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialLink {
+    position: absolute;
+    right: 60px;
+    bottom: 54px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 35px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        height: 62px;
+        padding: 25px 40px 25px 25px;
+    }
+
+    .navLeft {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .navHam img {
+        height: 15px;
+    }
+
+    .navLink {
+        top: 62px;
+        padding: 1rem 25px;
+    }
+
+    .navLink a {
+        padding: .64rem 0;
+        font-size: 16.6161px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+    }
+
+    .hero {
+        padding-top: 83px;
+        padding-bottom: 108px;
+    }
+
+    /* .heroCircle {
+        width: 109.51px;
+        height: 109.51px;
+    } */
+
+    .heroImg{
+        width: 125px;
+    }
+
+    .heroHeading {
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0.07em;
+    }
+
+    .heroSubheading {
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+    }
+
+    .heroText {
+        margin: 40px 0;
+        padding: 0 7.32%;
+    }
+
+    .heroText .top {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+    }
+
+    .heroText .mid {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+    }
+
+    .heroText .bot {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+    }
+
+    .heroLink {
+        gap: 25px;
+    }
+
+    .linkBtn {
+        width: 108.47px;
+        height: 31.61px;
+        font-size: 11.1565px;
+        line-height: 17px;
+    }
+
+    .socialLink {
+        position: absolute;
+        right: inherit;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+        flex-direction: row;
+        gap: 1.5rem;
+        font-size: 28px;
+    }
+
+}
